@@ -1,3 +1,8 @@
+:root{
+    --cor-principal: #333;
+    --cor-segundaria: #04AA6D;
+}
+
 body{
   margin: 0%;
   font-family: 'arvo', serif;
@@ -6,13 +11,13 @@ header{
   margin-top: 4vw;
   height: 8vw;
   width: 100%;
-  background-color: #333;
+  background-color: var(--cor-principal);
 }
 
 header div{
   margin: -1.5vw 2vw;
   position: absolute;
-  background-color: #04AA6D;
+  background-color: var(--cor-segundaria);
   width: max-content;
   padding: 4vw 6vw;
   font-size: 2.5vw;
@@ -36,7 +41,7 @@ section h2{
   padding: 1vw 1.5vw;
   width: 25vw;
   display: block;
-  background-color: #333;
+  background-color: var(--cor-principal);
   border-radius: 100px;
   border-style: none;
   margin-top: 1vw;
@@ -60,41 +65,41 @@ section input[type="button"]{
 }
 
 .inputs:focus{
-  background-color: #A187C7;
+  background-color: var(--cor-segundaria);
 }
 
 .register{
-  border: 3px solid #333;
+  border: 3px solid var(--cor-principal);
   background: none;
-  color: #333;
+  color: var(--cor-principal);
 }
 
 .login{
-  border: 3px solid #333;
-  background-color: #333;
+  border: 3px solid var(--cor-principal);
+  background-color: var(--cor-principal);
   color: white;
 }
 
 .login:hover{
-  border: 3px solid #A187C7;
-  background-color: #A187C7;
+  border: 3px solid var(--cor-segundaria);
+  background-color: var(--cor-segundaria);
   color: white;
 }
 .register:hover{
-  border: 3px solid #A187C7;
+  border: 3px solid var(--cor-segundaria);
   background: none;
-  color: #A187C7;
+  color: var(--cor-segundaria);
 }
 
 .login:active{
-  border: 3px solid #555F59;
-  background-color: #555F59;
+  border: 3px solid var(--cor-segundaria);
+  background-color: var(--cor-segundaria);
   color: white;
 }
 .register:active{
-  border: 3px solid #555F59;
+  border: 3px solid var(--cor-segundaria);
   background: none;
-  color: #555F59;
+  color: var(--cor-segundaria);
 }
 
 .balls{
@@ -102,7 +107,7 @@ section input[type="button"]{
   padding: 2.5vw 2vw;
   border-radius: 100vw;
   border: none;
-  background-color: #04AA6D;
+  background-color: var(--cor-segundaria);
   outline: none;
 }
 #ball1{
