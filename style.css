@@ -51,13 +51,19 @@ header input[type='radio']:checked + label{
     background-color: white;
     width: min-content;
     border-radius: 100px;
+    position: absolute;
+    bottom: 35vw;
+    right: 30vw;
 }
 .search div{
     display: flex;
 }
 .search input{
     font-size: 15pt;
-    width: 25vw;
+    width: 35vw;
     border: none;
     outline: none;
+}
+.search i{
+    font-size: 1.8vw;
 }
