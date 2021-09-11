@@ -8,35 +8,49 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div>
-                <input type="radio" name="home_buttons" id="home" value="home" checked>
-                <label for="home">Home</label>
-            </div>
-            <div>
-                <input type="radio" name="home_buttons" id="news" value="news">
-                <label for="news">News</label>
-            </div>
-            <div>
-                <input type="radio" name="home_buttons" id="contact" value="contact">
-                <label for="contact">Contact</label>
-            </div>
-            <div>
-                <input type="radio" name="home_buttons" id="about" value="about">
-                <label for="about">About</label>
-            </div>
-        </header>
 
-        
-        <div class="search">
-            <div>
-                <input type="text" placeholder="Search" id="question_search">
-                <i class="fas fa-search" onclick="question()"></i>
+        <div id="content">
+            <div id="about">
+                <div id="colun_1" class="colun"><h2>Lorem</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa, perferendis dolore minima sequi in sunt id. Ut doloribus totam similique inventore nulla numquam, aut, in vero, ab architecto consequatur.</p>
+                </div>
+                
+                <div id="colun_2" class="colun"><h2>Lorem</h2><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic provident incidunt possimus expedita enim, et fuga dicta repellendus a soluta sed distinctio quisquam assumenda odit. Aut totam saepe quidem tempore.</p></div>
+               
             </div>
+            <div>
+                <input type="button" value="Fazer login" id="login">
+            </div>
+            
+            
         </div>
 
+
+
+        <!--Barra de pesquisa-->
+            <div class="search">
+                <div>
+                    <input type="text" placeholder="Search" id="question_search">
+                    <i class="fas fa-search" onclick="question()"></i>
+                </div>
+            </div>
+        <!--Barra de pesquisa-->
+
+
+
+        <!--Roda pé-->
+        <footer>
+            <ul class="colun_footer">
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+            </ul>
+            
+        </footer>
+        <!--Roda pé-->
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,51 +1,71 @@
 :root{
     --cor-principal: #333;
     --cor-segundaria: #04AA6D;
+    --font-family: 'arvo', serif;
 }
 
 body {
     background-color: var(--cor-segundaria);
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-family);
     margin: 0;
     padding-top: 1rem;
 }
-header {
-    background-color: var(--cor-principal);
-    display: flex;
-    justify-content: space-around;
-}
-header div{
-    padding: 1.5vw 0vw;
-    width: max-content;
-}
 
-header label {
-    position: relative;
-    color: #f2f2f2;
-    padding: 1.6vw 10.39vw;
-    font-size: 1.5vw;
+#content{
     width: 100%;
 }
 
-
-
-header label:hover {
-    background-color: #ddd;
-    color: black;
+#about{
+    padding: 5vw;
+    display: flex;
+}
+.colun{
+    padding: 1vw;
+}
+.colun p{
+    font-size: 1.5vw;
+}
+#login{
+    position: relative;
+    padding: 1vw 10vw;
+    right: -65vw;
+    font-family: var(--font-family);
+    font-weight: bold;
+    color: white;
+    background-color: var(--cor-principal);
+    outline: none;
+    border-style: none;
+    
+}
+#login:hover{
+    background-color: white;
+    color: var(--cor-principal);
+}
+#login:active{
+    color: white;
+    background-color: var(--cor-principal);
 }
 
-header label.active {
-    background-color: var(--cor-segundaria);
+
+
+
+
+/*Roda pe*/
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px; 
+    background-color: var(--cor-principal);
+    display: flex;
+}
+
+.colun_footer a{
     color: white;
 }
+/*Roda pe*/
 
-header input[type='radio']{
-    display: none;
-}
-header input[type='radio']:checked + label{
-    background-color: var(--cor-segundaria);
-}
-
+/*Barra de pesquisa*/
 .search{
     padding: 1vw 1.5vw;
     background-color: white;
@@ -54,6 +74,7 @@ header input[type='radio']:checked + label{
     position: absolute;
     bottom: 35vw;
     right: 30vw;
+    display: none;
 }
 .search div{
     display: flex;
@@ -67,3 +88,4 @@ header input[type='radio']:checked + label{
 .search i{
     font-size: 1.8vw;
 }
+/*Barra de pesquisa*/
