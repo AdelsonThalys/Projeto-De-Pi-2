@@ -12,6 +12,7 @@ body {
 }
 
 #content{
+    margin-top: 3vw;
     width: 100%;
 }
 
@@ -25,21 +26,38 @@ body {
 .colun p{
     font-size: 1.5vw;
 }
-#login{
+input[type="button"]{
     position: relative;
-    padding: 1vw 10vw;
-    right: -65vw;
+    padding: 1vw 0vw;
+    width: 30vw;
     font-family: var(--font-family);
     font-weight: bold;
-    color: white;
-    background-color: var(--cor-principal);
     outline: none;
     border-style: none;
-    
+}
+#login{
+    background-color: var(--cor-principal);
+    color: white;
+}
+#search_button_active{
+    margin-top: 5px;
+    color: var(--cor-principal);
+}
+#search_button_active:hover{
+    color: white;
+    background-color: var(--cor-principal);
+    border: 2px solid white;
+}
+#search_button_active:active{
+    margin-top: 5px;
+    background-color: white;
+    color: var(--cor-principal);
+    border: 2px solid white;
 }
 #login:hover{
     background-color: white;
     color: var(--cor-principal);
+    border: 2px solid var(--cor-principal);
 }
 #login:active{
     color: white;
@@ -62,30 +80,38 @@ footer{
 
 .colun_footer a{
     color: white;
+    text-decoration: none;
+}
+.colun_footer{
+    padding-left: 20vw;
+    list-style-type: none;
+}
+.colun_footer li{
+    padding: 0.2vw 1vw;
 }
 /*Roda pe*/
 
 /*Barra de pesquisa*/
-.search{
+#search{
     padding: 1vw 1.5vw;
     background-color: white;
     width: min-content;
     border-radius: 100px;
     position: absolute;
-    bottom: 35vw;
-    right: 30vw;
-    display: none;
+    bottom: 17vw;
+    left: 15vw;
+    
 }
-.search div{
+#search div{
     display: flex;
 }
-.search input{
+#search input{
     font-size: 15pt;
     width: 35vw;
     border: none;
     outline: none;
 }
-.search i{
+#search i{
     font-size: 1.8vw;
 }
 /*Barra de pesquisa*/
