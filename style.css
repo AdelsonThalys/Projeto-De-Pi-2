@@ -93,25 +93,33 @@ footer{
 
 /*Barra de pesquisa*/
 #search{
+    bottom: 25vw;
+    left: 32.5vw;
+    display: none;
+    position: absolute;
+    text-align: center;
+}
+#search #i{
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+#search_bar{
     padding: 1vw 1.5vw;
     background-color: white;
     width: min-content;
     border-radius: 100px;
-    position: absolute;
-    bottom: 17vw;
-    left: 15vw;
-    
+
 }
-#search div{
+#search_bar div{
     display: flex;
 }
-#search input{
+#search_bar input{
     font-size: 15pt;
     width: 35vw;
     border: none;
     outline: none;
 }
-#search i{
+#search_bar i{
     font-size: 1.8vw;
 }
 /*Barra de pesquisa*/

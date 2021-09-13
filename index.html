@@ -22,8 +22,8 @@
                
             </div>
             <div style="display: block; width: min-content; right: 5vw; position: absolute;">
-                <input type="button" value="Fazer login" id="login">
-                <input type="button" value="Fazer uma pesquisa" id="search_button_active">
+                <a href="login/index.html"><input type="button" value="Entrar" id="login" onclick="login_page()"></a>
+                <input type="button" value="Fazer uma pesquisa" id="search_button_active" onclick="visible_search()">
             </div>
             
             
@@ -33,10 +33,14 @@
 
         <!--Barra de pesquisa-->
             <div id="search">
-                <div>
-                    <input type="text" placeholder="Search" id="question_search">
-                    <i class="fas fa-search" onclick="question()"></i>
+                <h2>Digite o que você deseja</h2>
+                <div id="search_bar">
+                    <div>
+                        <input type="text" placeholder="Search" id="question_search">
+                        <i class="fas fa-search" onclick="question()"></i>
+                    </div>
                 </div>
+                <div  id="i"><i class="far fa-times-circle" onclick="visible_search()"></i></div>
             </div>
         <!--Barra de pesquisa-->
 
